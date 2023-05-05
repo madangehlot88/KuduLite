@@ -17,6 +17,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <TrimUnusedDependencies>true</TrimUnusedDependencies>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
   <Target Name="BeforeBuild" AfterTargets="BeforeBuild">
     <Message Importance="High" Text="%0a+++ Building KuduLite +++%0a%0a" />
@@ -34,6 +35,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Proxy" Version="0.2.0" />
     <PackageReference Include="Microsoft.Diagnostics.Runtime" Version="2.4.416101" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.6" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="XmlSettings" Version="0.1.3" />
