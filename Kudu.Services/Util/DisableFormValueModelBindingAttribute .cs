@@ -25,8 +25,17 @@ namespace Kudu.Services
             {
                 context.ValueProviderFactories.Remove(jqueryFormValueProviderFactory);
             }
+
+            var formFileValueProviderFactory = context.ValueProviderFactories
+                .OfType<FormFileValueProviderFactory>()
+                .FirstOrDefault();
+            if (formFileValueProviderFactory != null)
+            {
+                context.ValueProviderFactories.RemoveType<FormFileValueProviderFactory>();
+            }
+
         }
- 
+
         public void OnResourceExecuted(ResourceExecutedContext context)
         {
         }

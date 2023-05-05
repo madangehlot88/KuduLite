@@ -22,9 +22,9 @@
     <Message Importance="High" Text="%0a+++ Building KuduLite +++%0a%0a" />
   </Target>
   <ItemGroup>
-    <PackageReference Include="AspNetCore.Proxy" Version="4.2.0" />
+    <PackageReference Include="AspNetCore.Proxy" Version="4.4.0" />
     <PackageReference Include="AspNetCore.RouteAnalyzer" Version="0.5.3" />
-    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="log4net" Version="2.0.15" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.4.421302">
       <PrivateAssets>all</PrivateAssets>
@@ -32,10 +32,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.5" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Proxy" />
-    <PackageReference Include="Microsoft.Diagnostics.Runtime" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Proxy" Version="0.2.0" />
+    <PackageReference Include="Microsoft.Diagnostics.Runtime" Version="2.4.416101" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="XmlSettings" Version="0.1.3" />
   </ItemGroup>
   <Target Name="_IncludePrePublishGeneratedContent" BeforeTargets="GetCopyToPublishDirectoryItems" Condition=" '$(EnableDefaultItems)' == 'true' And '$(EnableDefaultContentItems)' == 'true' " />

@@ -43,6 +43,7 @@ using Swashbuckle.AspNetCore.Swagger;
 using ILogger = Kudu.Core.Deployment.ILogger;
 using AspNetCore.Proxy;
 using ConfigurationManager = System.Configuration.ConfigurationManager;
+using Microsoft.OpenApi.Models;
 
 namespace Kudu.Services.Web
 {
@@ -96,7 +97,7 @@ namespace Kudu.Services.Web
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info {Title = "Kudu API Docs"});
+                c.SwaggerDoc("v1", new OpenApiInfo {Title = "Kudu API Docs"});
                 // Setting the comments path for the Swagger JSON and UI.
                 var xmlFile = $"Kudu.Services.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
