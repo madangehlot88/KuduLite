@@ -58,7 +58,7 @@
   <Target Name="PutNodeModulesInBinDir" AfterTargets="Build">
     <Exec Command="$(ProjectDir)\updateNodeModules.cmd &quot;$(PublishDir)&quot;" Condition="'$(OS)' == 'Windows_NT' AND  '$(Configuration)'=='Release'" />
     <Exec Command="$(ProjectDir)\updateNodeModules.cmd &quot;$(OutputPath)&quot;" Condition="'$(OS)' == 'Windows_NT' AND  '$(Configuration)'=='Debug'" />
-    <Exec Command="./updateNodeModules.sh &quot;$(PublishDir)&quot;" Condition="'$(OS)' != 'Windows_NT' AND '$(Configuration)' == 'Release'" />
+    <Exec Command="./updateNodeModules.sh" Condition="'$(OS)' != 'Windows_NT' AND '$(Configuration)' == 'Release'" />
     <Exec Command="./updateNodeModules.sh &quot;$(OutputPath)&quot;" Condition="'$(OS)' != 'Windows_NT' AND '$(Configuration)' == 'Debug'" />
   </Target>
   <Target Name="BuildKuduConsole" AfterTargets="Build">
