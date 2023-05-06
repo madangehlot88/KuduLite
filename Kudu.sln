@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kudu.Contracts", "Kudu.Contracts\Kudu.Contracts.csproj", "{0DAEEE18-6016-4C38-B9CD-9261C6336486}"
 EndProject
@@ -19,6 +19,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kudu.Tests", "Kudu.Tests\Kudu.Tests.csproj", "{C667BB81-BD51-4009-9555-1BC7462855B4}"
 	ProjectSection(ProjectDependencies) = postProject
 		{0DAEEE18-6016-4C38-B9CD-9261C6336486} = {0DAEEE18-6016-4C38-B9CD-9261C6336486}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B7A8F259-0AD1-470F-AD90-DCE55DD57EFE}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
 	EndProjectSection
 EndProject
 Global
